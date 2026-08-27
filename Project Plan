@@ -1,0 +1,133 @@
+IT 360 001 Fall 2026 
+
+Dylan Styczen, Ashley DiDomenico, Quinn Killian 
+ 
+Project Plan 
+Overview 
+
+- Project name, description 
+
+    Digital Law Detection  
+    A resource that allows investigators to understand what laws apply in the jurisdiction that their investigations fall under to make sure they are adhering to all laws during an investigation.  
+    The Project will allow an Illinois investigator to input their jurisdiction and what action they are planning to take and the AI will provide what laws they need to adhere to.  
+      - Objectives and success criteria 
+    
+    A user-friendly interface that accurately displays appropriate laws and regulations that apply to an investigator's investigation.  
+    Displays information at a reasonable pace  
+    A useable search function  
+    If time and skill permits, incorporating a function to search logs that comply with Illinois logs and/or incorporating other states  
+
+- Start and end dates 
+
+    Start: August 25th  
+    End: December 10th  
+  
+Stakeholders 
+
+- Sponsor designation 
+
+    The State of Illinois - Client 
+
+- Stakeholder list (with assigned roles and responsibilities) 
+
+    Quinn – Team Lead  
+    Dylan – The Programmer  
+    Ashley DiDomenico – Planner, Programmer, note taker/documentation 
+    Judges 
+    Lawyers 
+    Law Enforcement 
+
+Scope Management 
+
+- In-scope items 
+
+    interface that displays appropriate laws and regulations applicable to an investigation. 
+    useable search function 
+    Incorporating AI function 
+  
+- Out-of-scope items 
+
+    function to search logs that comply with Illinois logs and/or incorporating other states 
+    Inclusion of laws outside of Illinois jurisdiction 
+
+- Project assumptions and constraints 
+
+    Assumption: that the group has the required coding proficiency for the project. If this is discovered to be false, then that would create a constraint. 
+    Constraint: Time. All the required components have to come together before the end of the class while members of the group balance work and other class assignments and projects. 
+    Constraint: knowledge required to incorporate an AI system into code 
+  
+Timeline 
+
+- Milestones with key dates and deliverables 
+
+    8/27 - Project Plan due 
+    9/3 - Framework of code started 
+    9/10 - Project code advanced  
+    9/17 - Project Proposal Due 
+    9/24 - Law and governance research completed 
+    10/1 - code nearing completion 
+    10/8 - Begin incorporating AI 
+    10/15 - Assess if project is progressing on schedule or completable  
+    10/22 - Begin written portion 
+    10/22-11/5 - Continue working on code and written portion 
+    11/12 - Testing code and make required adjustments  
+    11/19 - fine tuning code 
+    11/26 - correcting any bugs 
+    12/3 have video done 
+    12/6 Project Due 
+  
+-Risk Management 
+
+    Working on the program in sections, to make sure each section functions correctly and flows together 
+    Doing more research on AI models to find the best way to incorporate it into the program 
+    Incorporating AI in a way to search and display information instead of relying on it to generate laws, to mitigate the risk of AI providing faulty information 
+  
+- Identified risks with impact/probability assessments 
+
+    Issues with coding a functional program - 10 x 3 = 30  
+    AI may not work in our favor/providing incorrect information. - 9 x 5 = 45  
+    Problem with VM accessibility – 6 x 4 = 24  
+  
+Resources 
+
+  - Budget allocation 
+
+    At this time, no additional budget is needed to progress with the project. All the required tools and recourses should already be acquired.  
+  
+- Required tools and technology 
+
+    GitHub 
+    Individual computers 
+    Free AI software (possibly ollama) 
+    Visual Studio code 
+    Virtual Machine 
+
+- Project dependencies 
+    
+    The project will be dependent on our ability to use our current resources to achieve our desired output within the semester.   
+  
+
+Communication 
+
+- Meeting cadence and reporting frequency 
+
+    Meeting once a week before after classes, varying based on availability  
+  
+- Communication channels 
+
+    Teams Chat 
+    Ilstu email 
+  
+Action Items 
+
+- Actionable tasks with owners, due dates, and GSD sync capability (items can be pushed to the main GSD inbox for tracking) 
+
+    Virtual Machie Configuration – Dylan - [dependent on VM access] 
+    Script Written – Dylan, Ashley, and Quinn [10/1] 
+    Incorporate User Interface (Leaning towards website) [11/1] 
+    Script Tested – Ashley – [11/1] 
+    Script Debugging/Perfecting – Dylan, Ashley, and Quinn [11/19] 
+    Creating the presentation – Dylan and Ashley [11/19] 
+    Finish/Edit Presentation- Dylan, Quinn, Ashley [12/1] 
+    Written Report – Quinn [12/1] 
+    Demo – Dylan, Ashley, and Quinn [12/1] 
