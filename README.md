@@ -38,7 +38,7 @@ Investigator → Streamlit Interface → AI Analysis → Law Database Search →
  
 ## Team Members
  
-- Add team member names here
+Dylan Styczen, Ashley, Quinn 
  
 ## Current Status
  
