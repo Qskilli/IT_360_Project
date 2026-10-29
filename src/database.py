@@ -55,3 +55,10 @@ def get_all_laws(db_path: Path = DB_PATH) -> list[dict]:
         # This always closes the database connection when finished
         finally:
             conn.close()
+
+    # This turns a SQLite error into a friendly DatabaseError for the front end
+    except sqlite3.Error as error:
+        raise DatabaseError(f"Could not read the law database: {error}")
+
+    # This converts each row into a regular dictionary
+    return [dict(row) for row in rows]
