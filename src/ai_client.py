@@ -42,7 +42,8 @@ def _build_prompt(case_description: str, laws: list[dict]) -> str:
     """Combine the case description and the numbered law list into one prompt."""
     # This turns each law into one line like "[1] 720 ILCS 5/17-51 - Title: summary", one per line
     law_list = "\n".join(
-        f"[{law['id']}] {law['citation']} - {law['title']}: {law['summary']}"
+        f"[{law['id']}] {law['title']} ({law['citation']}, {law['jurisdiction']}): "
+        f"{law['summary']} Topics: {law['tags']}"
         for law in laws
     )
     # This returns the prompt: the case, the numbered laws, and the exact JSON format to reply in.
