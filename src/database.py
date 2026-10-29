@@ -7,6 +7,9 @@ import sqlite3
 #Imports built in tool for building paths (work for Mac, Windows and Linux)
 from pathlib import Path 
 
-DB_PATH = Path(_file_) 
+# The database lives in the project's data/ folder, one level above src/.
+# (__file__ is this file; .parent.parent goes up from src/ to the project folder.)
+DB_PATH = Path(__file__).resolve().parent.parent / "data" / "illinois_digital_laws.sqlite"
+
 
 
