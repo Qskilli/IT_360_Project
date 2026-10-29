@@ -28,3 +28,30 @@ LAWS_QUERY = """
     GROUP BY laws.id                                          -- combine a law's tag rows back into one row
     ORDER BY laws.id                                          -- return laws in ID order
 """
+
+
+# This is a custom error type for database problems. So the front end can catch it and show the message
+class DatabaseError(Exception):
+    """Raised for any database problem; the message is safe to show to the user."""
+
+
+# This is the main function the front end calls to load every law the AI may choose from
+def get_all_laws(db_path: Path = DB_PATH) -> list[dict]:
+    """Return every law in the database as a list of dictionaries."""
+    # This checks for the file first. Otherwise SQLite would silently create an empty one.
+    if not db_path.exists():
+        # This stops with a clear message saying where the database was expected
+        raise DatabaseError(f"Law database not found at {db_path}.")
+
+    # This catches any SQLite problem (such as a damaged file) in the block below
+    try:
+        # mode=ro opens the database read-only, so the app can never change the law data.
+        conn = sqlite3.connect(f"{db_path.as_uri()}?mode=ro", uri=True)
+        conn.row_factory = sqlite3.Row  # lets each row be turned into a dictionary
+        # This makes sure the connection gets closed even if the query fails
+        try:
+            # This runs the query and collects every resulting row
+            rows = conn.execute(LAWS_QUERY).fetchall()
+        # This always closes the database connection when finished
+        finally:
+            conn.close()
