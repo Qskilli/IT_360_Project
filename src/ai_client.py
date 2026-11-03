@@ -19,7 +19,7 @@ import requests
 # This is the address of the AI server. It uses OLLAMA_BASE_URL if set, otherwise the ISU class server
 BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://sushi.it.ilstu.edu:8080")
 # This is the name of the AI model to use, It uses OLLAMA_MODEL if set, otherwise "llama3"
-MODEL = os.getenv("OLLAMA_MODEL", "llama3")
+MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:latest")
 # This is the maximum number of seconds to wait for the AI to respond before giving up
 TIMEOUT_SECONDS = 120
 
